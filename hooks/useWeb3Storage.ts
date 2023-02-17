@@ -1,4 +1,4 @@
-//Authored by Amaan
+
 import React from 'react';
 import toast from 'react-hot-toast';
 import {Web3Storage} from "web3.storage";
@@ -12,10 +12,12 @@ const useWeb3Storage = () => {
   const storeFile = async (file:File,token:string) =>{
     console.log("inside store file")
     try{
-
+      toast("🚀 Uploading file to IPFS")
       const client = new Web3Storage({token});
       const cid = await client.put([file]);
-      return `${cid}/${file.name}`;
+
+      toast.success("Picture uploaded to IPFS")
+      return `ipfs://${cid}/${file.name}`;
     }catch(err){
       console.error(err);
     }

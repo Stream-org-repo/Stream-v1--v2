@@ -1,4 +1,3 @@
-//Authored by Amaan
 
 const hre = require("hardhat");
 

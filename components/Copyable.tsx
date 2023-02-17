@@ -1,4 +1,3 @@
-//Authored by Amaan
 
 import React from 'react'
 import {DuplicateIcon} from "@heroicons/react/outline";
