@@ -5,7 +5,6 @@ import moment from "moment";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { BeatLoader } from "react-spinners";
 import { STREAM_NFT_ADDRESS } from "../../constants";
 import useLivpeerApi from "../../hooks/useLivepeerApi";
 import useSuperstreamContract from "../../hooks/useSuperstreamContract";
@@ -18,6 +17,7 @@ type Session = {
   id: string;
   duration: number;
   createdAt: number;
+  recordingStatus:string;
   status: "Unpublished" | "Published";
 };
 
@@ -45,6 +45,7 @@ const SessionDetails = ({ streamId }: Props) => {
     let _sessions = await livepeer.getSessionsList(streamId);
     _sessions.map(async (item) => {
       const isPublished = await checkIfAlreadyPublished(item.id);
+  
       setSessions((sessions) => [
         ...sessions,
         {
@@ -52,6 +53,7 @@ const SessionDetails = ({ streamId }: Props) => {
           duration: item.sourceSegmentsDuration,
           id: item.id,
           status: isPublished ? "Published" : "Unpublished",
+          recordingStatus: item.recordingStatus
         },
       ]);
     });
@@ -66,7 +68,7 @@ const SessionDetails = ({ streamId }: Props) => {
   useEffect(() => {
     if (streamId) {
       getSessions();
-      // console.log(sessions);
+  
     }
   }, [streamId]);
 
@@ -84,6 +86,7 @@ const SessionDetails = ({ streamId }: Props) => {
                 <th className="p-2 px-4">Streamed At</th>
                 <th className="p-2 px-4 text-center">Duration</th>
                 <th className="p-2 px-4 text-center">Status</th>
+                <th className="p-2 px-4 text-center">Recording Status</th>
                 <th className="p-2 px-4 text-right"></th>
               </tr>
               {sessions &&
@@ -100,6 +103,7 @@ const SessionDetails = ({ streamId }: Props) => {
                         .humanize()}
                     </td>
                     <td className="p-2 px-4 text-center">{session.status}</td>
+                    <td className="p-2 px-4 text-center">{session.recordingStatus}</td>
                     <td className="p-2 px-4 text-right">
                       {session.status == "Unpublished" && (
                         <Link href={`/publish?id=${session.id}`}>
@@ -111,6 +115,7 @@ const SessionDetails = ({ streamId }: Props) => {
                     </td>
                   </tr>
                 ))}
+               
             </tbody>
           </table>
         ) : (
