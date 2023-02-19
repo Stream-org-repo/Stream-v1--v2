@@ -1,3 +1,4 @@
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -11,6 +12,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@vidstack/player/tailwind.cjs'),
+    require('tailwind-scrollbar'),
   ],
 }
