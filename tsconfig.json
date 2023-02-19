@@ -1,3 +1,4 @@
+
 {
   "compilerOptions": {
     "target": "es5",
@@ -6,7 +7,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "types": ["@vidstack/player/globals"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -24,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/api/stream/[streamId].js", "pages/api/stream/index.js"  ],
   "exclude": [
     "node_modules"
   ]
