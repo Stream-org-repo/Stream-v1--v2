@@ -1,4 +1,4 @@
-//Authored by Amaan
+
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import {ethers} from "ethers";
 import { NextApiRequest,NextApiResponse } from "next";
