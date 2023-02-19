@@ -1,7 +1,7 @@
 
 {
     "contracts": {
-        "c:/Users/Amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol": {
+        "c:/Users/amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol": {
             "Superstream": {
                 "abi": [],
                 "devdoc": {
@@ -36,7 +36,7 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/Amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol\":\"Superstream\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/Amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol\":{\"keccak256\":\"0x8deb934b62573557186b56178848dd03ba2c1bcf54bb84608da440d590aee10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b935b0fdd3269c2be330809430280029a1975505482ef9427d6f577a5d36551\",\"dweb:/ipfs/QmYMxK4jE31AezdK9HhZJ9QwF1o9WCsqgVpFjn5P2hddmX\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol\":\"Superstream\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol\":{\"keccak256\":\"0x8deb934b62573557186b56178848dd03ba2c1bcf54bb84608da440d590aee10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b935b0fdd3269c2be330809430280029a1975505482ef9427d6f577a5d36551\",\"dweb:/ipfs/QmYMxK4jE31AezdK9HhZJ9QwF1o9WCsqgVpFjn5P2hddmX\"]}},\"version\":1}",
                 "storageLayout": {
                     "storage": [],
                     "types": null
@@ -50,9 +50,9 @@
         }
     },
     "sources": {
-        "c:/Users/Amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol": {
+        "c:/Users/amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol": {
             "ast": {
-                "absolutePath": "c:/Users/Amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol",
+                "absolutePath": "c:/Users/amaan/Documents/GitHub/ethernals-project/superstream-ethernals/contracts/Superstream.sol",
                 "exportedSymbols": {
                     "Superstream": [
                         9
